@@ -187,7 +187,7 @@
 </head>
 <body class="bg-black text-white p-4">
 
-    <main class="flex flex-col items-center justify-center min-h-screen">
+    <main class="flex flex-col items-center justify-center min-h-screen py-12">
         
         <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg hero-pillar-container">
             <img 
@@ -198,14 +198,15 @@
             >
         </div>
 
-        <!-- Container for the single glitching letters --><div class="single-letter-glitch-container">
+        <div class="single-letter-glitch-container">
             <span class="glitch-single-letter" data-text="ب">ب</span>
             <span class="glitch-single-letter" data-text="ی">ی</span>
             <span class="glitch-single-letter" data-text="د">د</span>
             <span class="glitch-single-letter" data-text="ا">ا</span>
             <span class="glitch-single-letter" data-text="ر">ر</span>
             <span class="glitch-single-letter" data-text="م">م</span>
-            <span class="glitch-single-letter" data-text=" "> </span> <!-- Space character --><span class="glitch-single-letter" data-text="ک">ک</span>
+            <span class="glitch-single-letter" data-text=" "> </span> <!-- Space -->
+            <span class="glitch-single-letter" data-text="ک">ک</span>
             <span class="glitch-single-letter" data-text="ن">ن</span>
         </div>
 
@@ -213,17 +214,33 @@
             4o4 - OUT NOW
         </p>
 
-        <!-- Hidden email for Spotify verification - Made slightly more visible -->
-        <div class="absolute bottom-4 left-0 right-0 text-center w-full text-xs text-gray-500 opacity-75 font-mono select-all" aria-hidden="true">
-            charocharmusic@gmail.com
+        <!-- Push.fm Link and Text -->
+        <div class="flex flex-col items-center mt-6 w-full subtitle-animate" style="animation-delay: 0.7s;">
+            <!-- Main Link Button -->
+            <a href="https://push.fm/fl/4o4" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-block bg-white text-black font-bold uppercase tracking-widest py-3 px-10 rounded-full text-lg transition-transform duration-300 ease-out hover:scale-105 hover:bg-gray-200"
+               dir="ltr">
+               Stream / Download
+            </a>
+            
+            <!-- Service Text -->
+            <p class="text-gray-400 text-sm mt-4 px-4 text-center" dir="ltr">
+                Available on Spotify, Apple Music, YouTube, Deezer, Tidal, and more.
+            </p>
         </div>
+        
+        <!-- Contact Info -->
+        <p class="mt-16 text-sm font-sans text-gray-400 uppercase tracking-widest subtitle-animate" dir="ltr" style="animation-delay: 0.9s;">
+            CONTACT/MNGMNT: fardmabbie@proton.me
+        </p>
 
     </main>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const letters = document.querySelectorAll('.glitch-single-letter');
-            const fullText = "بیدارم کن"; // For reference
             let currentIndex = 0;
 
             function animateLetter() {
@@ -264,6 +281,4 @@
     </script>
 </body>
 </html>
-
-
 
